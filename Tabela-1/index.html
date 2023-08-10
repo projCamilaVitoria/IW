@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela-1</title>
+<!--ESTILO-->
+<Style>
+    body
+        {
+            font-family: Arial, Helvetica, sans-serif;  /*Estilo da fonte*/
+        }
+table{
+width: 500px;/*Largura da tabela*/
+border-collapse: collapse;/*Elimina os espaço entre as células*/
+}
+ td, th {
+border: 1px solid rgb(236, 227, 227);/*espessura e estilo da borda da células*/
+padding: 10px; /*Distancia entre o conteudo e as bordas*/
+ }
+ caption{
+    font-size: 22px;/* tamanho da fonte do título da tabela*/
+    font-weight: bold;/*Peso ou intencidade da fonte*/
+    padding: 10px;/*Distancia entre o conteudo das borda*/
+    background-color: rgba(71, 161, 184, 0.484);/* cor do fundo do titulo da tabela*/
+ }
+ thead, tfoot{
+background-color: #42060c;/* Cor de fundo do cabeçalho do rodapé*/
+color: rgb(255, 250, 250);/*Cor da fonte*/
+ }
+ tbody> tr:nth-child(odd){/* Linhas imapres*/
+    background-color: rgb(227, 200, 200);/* cor de fundo da linha*/
+
+ }
+ tbody> tr:nth-child(even)/*Linhas pares*/ {
+background-color: rgb(123, 122, 122);/*cor de fundo da linha*/
+ }
+ td.num{
+    text-align: right;/*Alinhamento do texto da class "num"*/
+ }
+ 
+</Style>
+
+
+
+
+
+</head>
+<body>
+ <h1>Estrutura de tabelas grandes</h1>   
+<!--
+    ANATOMIA PARA TABELAS GRANDES 
+    TABLE:tabela
+    TR(table row):linha da tabela
+    TD(table data):Célula ta tabela
+    CAPTION:Titulo
+    THEAD:cabeçalho da tabela
+    TBODY:corpo da tabela
+    TFOOT:Rodapé da tabela
+    TH:(table head): célula de cabeçalho da tabela
+-->
+
+<table>
+    <caption>POPULAÇÃO DOS ESTADOS</caption>
+    <thead>
+        <tr>
+            <th colspan="2">SUDESTE</th>
+        </tr>
+        <tr>
+            <th>Estado</th>
+            <th style="width:50px;">Quantidade</th>
+        </tr>
+    </thead>
+   <tbody>
+    <td>São Paulo</td>
+    <td class="num">44 milhões</td>
+   <tr>
+    <td>Minas Gerais</td>
+    <td class="num">20 milhões</td>
+   </tr>
+   <tr>
+    <td>Rio de janeiro</td>
+    <td class="num">16 milhões</td>
+   </tr>
+   <tr>
+    <td>Espirito santo</td>
+    <td class="num">4 milhões</td>
+   </tr>
+   </tbody>
+   <tfoot>
+    <tr>
+        <td>Total de abitantes</td>
+        <td class="num"><strong>84 milhões</strong></td>
+    </tr>
+   </tfoot>
+</table>
+</body>
+</html>
